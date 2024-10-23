@@ -7,13 +7,149 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#00A651"
+        android:padding="16dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Giải phương trình bậc 2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Input fields for a, b, c -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập a:"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/input_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:background="#E0FFCE"
+                android:padding="8dp"
+                android:marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập b:"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/input_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:background="#E0FFCE"
+                android:padding="8dp"
+                android:marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập c:"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/input_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:background="#E0FFCE"
+                android:padding="8dp"
+                android:marginLeft="10dp" />
+        </LinearLayout>
+
+        <!-- Buttons for actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#E0E0E0"
+                android:text="Tiếp tục"
+                android:textColor="#616161" />
+
+            <Button
+                android:id="@+id/button_solve"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#E0E0E0"
+                android:text="Giải PT"
+                android:textColor="#616161" />
+
+            <Button
+                android:id="@+id/button_exit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:layout_margin="4dp"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+
+        <!-- Result Display -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pt có 2 No: x1= ; x2= "
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:paddingTop="20dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
