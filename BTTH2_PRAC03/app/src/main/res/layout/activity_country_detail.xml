@@ -1,0 +1,61 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView để hiển thị ảnh quốc kỳ -->
+    <ImageView
+        android:id="@+id/ivFlagDetail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvNationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Các TextView khác để hiển thị thông tin chi tiết -->
+    <TextView
+        android:id="@+id/tvCapitalDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capital"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Population"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Density"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvWorldShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="World Share"
+        android:textSize="18sp" />
+</LinearLayout>
