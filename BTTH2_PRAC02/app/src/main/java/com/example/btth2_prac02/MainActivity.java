@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 Staff newStaff = new Staff(staffId, fullName, birthDate, salary);
                 staffViewModel.addStaff(newStaff);
 
-                // Xóa dữ liệu nhập sau khi thêm
+                // Xóa dữ liệu nhập sau khi thêm vào
                 etStaffId.setText("");
                 etFullName.setText("");
                 etBirthDate.setText("");
